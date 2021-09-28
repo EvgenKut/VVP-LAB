@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		Console.WriteLine("Введите длину стороны a\n"); // Вывод сообщения о просьбе ввести длину стороны а
+		int a = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Введите длину стороны b\n"); // Вывод сообщения о просьбе ввести длину стороны b
+		int b = Convert.ToInt32( Console.ReadLine());
+		int s = a * b ; //Вычисление площади
+		Console.WriteLine("Площадь прямоугольника равна\n");
+		Console.WriteLine(s); //Вывод значения вычесленной площади
+		int p = 2 * (a + b) ; //Вычисление периметра
+		Console.WriteLine("Периметр прямоугольника равен\n");
+		Console.WriteLine(p); //Вывод значения вычесленного периметра
+	}
+}
