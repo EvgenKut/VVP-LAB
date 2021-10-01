@@ -10,9 +10,9 @@ public class Program
 		int b = Convert.ToInt32( Console.ReadLine());
 		int s = a * b ; //Вычисление площади
 		Console.WriteLine("Площадь прямоугольника равна\n");
-		Console.WriteLine(s); //Вывод значения вычесленной площади
+		Console.WriteLine(s); //Вывод значения вычисленной площади
 		int p = 2 * (a + b) ; //Вычисление периметра
 		Console.WriteLine("Периметр прямоугольника равен\n");
-		Console.WriteLine(p); //Вывод значения вычесленного периметра
+		Console.WriteLine(p); //Вывод значения вычисленного периметра
 	}
 }
