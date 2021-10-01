@@ -1,0 +1,13 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		Console.WriteLine("Введите длину диаметра окружности\n"); // Вывод сообщения о просьбе ввести длину диаметра окружности
+		int d = Convert.ToInt32(Console.ReadLine());
+		double pi = 3.14;
+		double l = pi * d; // Вычисление длины окружности
+		Console.WriteLine("Длина окружности равна\n");
+		Console.WriteLine(l); //Вывод значения вычисленной длины окружности
+		
