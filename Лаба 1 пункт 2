@@ -10,4 +10,5 @@ public class Program
 		double l = pi * d; // Вычисление длины окружности
 		Console.WriteLine("Длина окружности равна\n");
 		Console.WriteLine(l); //Вывод значения вычисленной длины окружности
-		
+	}
+}
