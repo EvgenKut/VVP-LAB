@@ -1,0 +1,34 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		Console.WriteLine("Введите число a\n"); // Вывод сообщения о просьбе ввести число а
+		double a = Convert.ToDouble(Console.ReadLine());
+		Console.WriteLine("Введите число b\n"); // Вывод сообщения о просьбе ввести число b
+		double b = Convert.ToDouble(Console.ReadLine());
+		double x = Convert.ToDouble(Math.Pow(a,2));
+		double y = Convert.ToDouble(Math.Pow(b,2)); //Для удобства обозначим квадраты чисел a и b за x и y
+		if (a!=0 && b!=0) // Если a и b ненулевые, посчитать и вывести значение
+		{
+		 double c = x + y;
+		Console.WriteLine("Сумма квадратов равна\n"); 
+		Console.WriteLine(c); // Суммы их квадратов
+		 double d = x - y;
+		Console.WriteLine("Разность квадратов равна\n"); 
+		Console.WriteLine(d); // Разности их квадратов
+		 double e = x * y;
+		Console.WriteLine("Произведение квадратов равно\n"); 
+		Console.WriteLine(e); // Произведения их квадратов
+		 double f = x / y;
+		Console.WriteLine("Частное квадратов равно\n"); 
+		Console.WriteLine(f); // Частного их квадратов
+		}
+		else 
+		{
+		Console.WriteLine("Числа a и b не должны равняться нулю.\n"); // Иначе вывести данное сообщение
+		}	
+
+	}
+}
