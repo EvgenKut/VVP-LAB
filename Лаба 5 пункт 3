@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Введите координату точки A\n");
+	double A = Convert.ToDouble(Console.ReadLine());
+	Console.WriteLine("Введите координату точки B\n");
+	double B = Convert.ToDouble(Console.ReadLine());
+	Console.WriteLine("Введите координату точки C. C должна находиться между A и B\n");
+	double C = Convert.ToDouble(Console.ReadLine());
+	while ((C<=A && C<=B)||(C>=A && C>=B))
+	{
+	Console.WriteLine("Введите координату точки C. C должна находиться между A и B\n");
+	C = Convert.ToDouble(Console.ReadLine());
+	}
+	double x = Math.Abs(C-A)*Math.Abs(C-B);
+	Console.WriteLine("Произведение длин AC и AB равно\n" + (x));
+	}
+}
