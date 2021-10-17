@@ -1,0 +1,20 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	 Console.WriteLine("Введите значение A");
+	 double A = Convert.ToDouble(Console.ReadLine());
+	 Console.WriteLine("Введите значение B");
+	 double B = Convert.ToDouble(Console.ReadLine());
+	 Console.WriteLine("Введите значение C");
+	 double C = Convert.ToDouble(Console.ReadLine());
+	 A = A+B+C;
+	 B = A-B-C;
+	 C = A-B-C;
+	 A = A-B-C;
+	 Console.WriteLine(("A=")+ (A));
+	 Console.WriteLine(("B=")+ (B));
+	 Console.WriteLine(("C=")+ (C));
+	}
+}
