@@ -1,0 +1,13 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	 Console.WriteLine("Введите значение A");
+	 double A = Convert.ToDouble(Console.ReadLine());
+	 double x = Math.Pow(A,2);
+	 double y = Math.Pow(A,3);
+	 double A15 = x*x*x*y*y*y;
+	 Console.WriteLine("A в 15 степени равно "+(A15));
+	}
+}
