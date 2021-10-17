@@ -1,0 +1,11 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	 Console.WriteLine("Введите значение угла a в градусах");
+	 double a = Convert.ToDouble(Console.ReadLine());
+	 double x = a*3.14/180;
+	 Console.WriteLine("a в радианах = "+ (x));
+	}
+}
