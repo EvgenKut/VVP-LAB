@@ -1,0 +1,16 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	 int A,B;
+	 do { 
+	     Console.WriteLine("Введите длину отрезков A и B. A > B\n A=");
+	     A = Convert.ToInt32(Console.ReadLine());
+	     Console.WriteLine("B=");
+	     B = Convert.ToInt32(Console.ReadLine());
+	 } while (A <= B);
+	 int x = A/B;
+	 Console.WriteLine("На отрезке A размещено "+(x)+" отрезков B");
+	 }
+}
