@@ -1,0 +1,14 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	 int x;
+	 do {
+	     Console.WriteLine("Введите двухзначное число.");
+	     x = Convert.ToInt32(Console.ReadLine());
+	}while (x<10 && x>99);
+	int y = x%10 * 10 + x/10;
+	Console.WriteLine("При перестановке цифр исходного числа получено "+(y));
+	}
+}
