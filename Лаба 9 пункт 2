@@ -1,0 +1,14 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите номер K-го дня года:");
+    int K = Convert.ToInt32(Console.ReadLine());
+    int d = K%7;
+    if (d == 7){
+        d = 0;
+    } 
+    Console.WriteLine("Номер дня недели  "+ (K) + "-го дня года: "+ d);
+  }
+}
