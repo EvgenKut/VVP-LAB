@@ -1,0 +1,11 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите номер года:");
+    int K = Convert.ToInt32(Console.ReadLine());
+    int N = K/100 + 1 ;
+    Console.WriteLine((K)+"-й год соответствует "+(N)+"-му столетию.");
+	}
+}
