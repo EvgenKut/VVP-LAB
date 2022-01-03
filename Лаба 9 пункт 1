@@ -1,0 +1,10 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("С начала суток прошло N секунд. Введите N:");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("С начала последней минуты прошло "+ (N % 60) + " секунд.");
+  }
+}
