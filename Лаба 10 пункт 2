@@ -1,0 +1,18 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите целое число A");
+    int A = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите целое число B");
+    int B = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите целое число C");
+    int C = Convert.ToInt32(Console.ReadLine());
+    bool x = (A < B & B < C & A < C);
+    if(x){
+        Console.WriteLine("Двойное неравенство справедливо");
+    }
+    else Console.WriteLine("Двойное неравенство несправедливо");
+	}
+}
