@@ -1,0 +1,21 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите сторону a");
+    int a = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите сторону b");
+    int b = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите сторону c");
+    int c = Convert.ToInt32(Console.ReadLine());
+    if (a*a == b*b + c*c){
+        Console.WriteLine("Треугольник abc прямоугольный");
+    } else if (b*b == a*a + c*c){
+        Console.WriteLine("Треугольник abc прямоугольный");
+    }else if (c*c == a*a + b*b){
+        Console.WriteLine("Треугольник abc прямоугольный");
+    }else
+    Console.WriteLine("Треугольник abc не прямоугольный");
+    }
+}
