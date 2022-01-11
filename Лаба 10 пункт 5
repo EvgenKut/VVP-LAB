@@ -1,0 +1,17 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите четырехзначное число");
+    int A = Convert.ToInt32(Console.ReadLine());
+    if (A>999 & A<10000){
+     bool x = ((A/1000)%10 == A%10 & (A/100)%10 == (A/100)%10);
+     if (x){
+         Console.WriteLine("Данное число читается одинаково слева направо и справа налево");
+        }else 
+     Console.WriteLine("Данное число не читается одинаково слева направо и справа налево");
+    }else
+    Console.WriteLine("Введено не четырехзначное число");
+	}
+}
