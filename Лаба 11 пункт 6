@@ -1,0 +1,26 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите целое число от 1 до 999");
+    int A = Convert.ToInt32(Console.ReadLine());
+    if (A>=1 & A<=999){
+        if (A<10){
+        if (A%2==0){
+            Console.WriteLine("Это однозначное четное число");
+        }else
+        Console.WriteLine("Это однозначное нечетное число");
+    }else if (A<100){
+        if (A%2==0){
+            Console.WriteLine("Это двузначное четное число");
+        }else
+        Console.WriteLine("Это двузначное нечетное число");
+    }else if (A%2==0){
+        Console.WriteLine("Это трехзначное четное число");
+    }else 
+    Console.WriteLine("Это трехзначное нечетное число");
+    }else
+    Console.WriteLine("Число не принадлежит интервалу от 1 до 999");
+	}
+}
