@@ -1,0 +1,21 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите число A");
+    double A = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите число B");
+    double B = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите число C");
+    double C = Convert.ToDouble(Console.ReadLine());
+    double x;
+    if (A<=B & A<=C){
+        x = B+C;
+    }else if (B<=A & B<=C){
+        x = A+C;
+	}else 
+    x = A+B;
+	Console.WriteLine("Сумма двух наибольших чисел равна "+(x));
+	}
+}
