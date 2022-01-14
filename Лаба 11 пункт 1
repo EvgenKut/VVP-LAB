@@ -1,0 +1,19 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите целое число A");
+    int A = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите целое число B");
+    int B = Convert.ToInt32(Console.ReadLine());
+    if (A==B){
+        A=0;
+        B=0;
+    }else if (A>B){
+        B=A;
+    }else
+    A=B;
+    Console.WriteLine("Теперь A= "+(A)+" и B= "+ (B));
+	}
+}
