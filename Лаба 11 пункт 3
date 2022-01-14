@@ -1,0 +1,19 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите число A");
+    double A = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите число B");
+    double B = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите число C");
+    double C = Convert.ToDouble(Console.ReadLine());
+    if ((Math.Abs(A-C)) > (Math.Abs(A-B))){
+        Console.WriteLine("Точка "+ (B)+" ближе к точке A и расстояние межу ними равно "+(Math.Abs(A-B)));
+    } else if ((Math.Abs(A-C)) < (Math.Abs(A-B))){
+        Console.WriteLine("Точка "+ (C)+" ближе к точке A и расстояние межу ними равно "+(Math.Abs(A-C)));
+	}else 
+	Console.WriteLine("Точки "+(B)+" и "+(C)+" равноудалены от A на расстоянии "+(Math.Abs(A-B)));
+	}
+}
