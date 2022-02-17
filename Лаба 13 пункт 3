@@ -1,0 +1,18 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Введите целое положительное число");
+    int N = Convert.ToInt32(Console.ReadLine());
+    if (N>0){
+    int x = 0;
+    for (int c=1; x<N*N ; c+=2){
+        x = x+c;
+        Console.WriteLine("Текущее значение суммы равно "+(x));
+    }
+    Console.WriteLine("Квадрат числа равен "+(x));
+    }else
+    Console.WriteLine("Введено отрицательное число или 0");
+	}
+}
