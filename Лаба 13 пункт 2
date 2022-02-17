@@ -1,0 +1,13 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Введите целое число");
+    int N = Convert.ToInt32(Console.ReadLine());
+    double x = 1;
+    for (double c=1.1 ; (c-1.1)*10 < N ; c+=0.1)
+        x = x*c;
+    Console.WriteLine("Произведение равно "+(x));
+	}
+}
