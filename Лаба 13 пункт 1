@@ -1,0 +1,13 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Введите стоимость 1 кг конфет");
+    double s = Convert.ToDouble(Console.ReadLine());
+    double c;
+    for (c=0.1 ; c<1 ; c+=0.1){
+      Console.WriteLine("Стоимость "+(c)+" кг конфет равна "+(s*c));
+    }
+	}
+}
