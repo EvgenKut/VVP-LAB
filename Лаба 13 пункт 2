@@ -3,11 +3,14 @@ public class Program
 {
 	public static void Main(string[] args)
 	{
-	Console.WriteLine("Введите целое число");
+	Console.WriteLine("Введите целое положительное число");
     int N = Convert.ToInt32(Console.ReadLine());
+    if (N>0){
     double x = 1;
     for (double c=1.1 ; (c-1.1)*10 < N ; c+=0.1)
         x = x*c;
     Console.WriteLine("Произведение равно "+(x));
+    }else
+    Console.WriteLine("Введено отрицательное число или 0");
 	}
 }
