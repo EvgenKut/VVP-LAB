@@ -1,0 +1,21 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	Console.WriteLine("Введите вещественное число A");
+    double A = Convert.ToDouble(Console.ReadLine());
+	Console.WriteLine("Введите целое положительное число N");
+    int N = Convert.ToInt32(Console.ReadLine());
+    if (N>0){ //Условный оператор использую, но не внутри цикла, а для проверки положительности N
+    double x = 1;
+    double y = 1;
+    for (int c=1; c<=N ; ++c ){
+        y*= -A;
+        x+= y;
+    }
+    Console.WriteLine("Сумма чисел A в четных и -A в нечетных степенях от 0 до N равна "+(x));
+    }else
+    Console.WriteLine("Введено отрицательное число или 0");
+	}
+}
