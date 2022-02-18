@@ -1,0 +1,17 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите процент увеличения P вклада в месяц.(0<P<25)");
+    double P = Convert.ToDouble(Console.ReadLine());
+    if (0<P & P<25){
+        int K = 0;
+        double S;
+        for(S = 1000;S <= 1100;S += S/100*P)
+            K++;
+    Console.WriteLine("Через " +(K)+ " мес. сумма вклада превысит 1100 руб. и составит "+(S)+" руб.");
+    }else
+    Console.WriteLine("Введенное число не соответствует условию.");
+	}
+}
