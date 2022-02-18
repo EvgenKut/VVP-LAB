@@ -1,0 +1,19 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите целое число N (больше 1)");
+    int N = Convert.ToInt32(Console.ReadLine());
+    if (N>1){
+        int K = 1;
+        int S = 1;
+        while(N > S){
+            K++;
+            S+=K;
+        }
+        Console.WriteLine("K = "+(K)+" Сумма равна "+(S));
+    }else
+    Console.WriteLine("Введенное число не соответствует условию.");
+	}
+}
