@@ -1,0 +1,21 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите целое положительное число A");
+    int A = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите целое положительное число B");
+    int B = Convert.ToInt32(Console.ReadLine());
+    if (A>0 & B>0){
+        while (A != B){
+        if (A>B){
+        A -= B;
+        }else
+        B -= A;
+    }
+    Console.WriteLine("НОД A и B равен "+(A));
+    }else
+    Console.WriteLine("Введенные числа не соответствуют условию.");
+	}
+}
