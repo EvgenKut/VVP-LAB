@@ -1,0 +1,22 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите целое число N (N>1), являющееся числом Фибоначчи.");
+    int N = Convert.ToInt32(Console.ReadLine());
+    if (N>1){
+        int K;
+        int f=0; 
+        int f0=1;
+        int x=1;
+        for(K=1;f<N;K++){
+            x=f;
+            f+=f0;
+            f0=x;
+        }
+    Console.WriteLine("Число N является "+(K)+"-м числом Фибоначчи");
+    }else
+    Console.WriteLine("Введенное число не соответствует условию.");
+	}
+}
