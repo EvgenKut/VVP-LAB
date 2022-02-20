@@ -1,0 +1,25 @@
+using System;
+public class Program
+{
+    public static double RingS (double R1, double R2){
+    double S1=3.14*R1*R1;
+    double S2=3.14*R2*R2;
+    double S=S1-S2;
+    return S;
+    }
+	public static void Main(string[] args){
+    Console.WriteLine("Введите внешний и внутренний радиус первого кольца.");
+    double A1 = Convert.ToDouble(Console.ReadLine());
+    double A2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите внешний и внутренний радиус второго кольца.");
+    double B1 = Convert.ToDouble(Console.ReadLine());
+    double B2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите внешний и внутренний радиус третьего кольца.");
+    double C1 = Convert.ToDouble(Console.ReadLine());
+    double C2 = Convert.ToDouble(Console.ReadLine());
+    if(A1>A2 & B1>B2 & C1>C2 & A2>0 & B2>0 & C2>0){
+    Console.WriteLine("Площади колец соотвестственно равны "+(RingS(A1,A2))+"; "+(RingS(B1,B2))+"; "+(RingS(C1,C2)));
+    }else
+    Console.WriteLine("Введены некорректные данные.");
+	}
+}
