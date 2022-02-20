@@ -1,0 +1,21 @@
+using System;
+public class Program
+{
+    public static double Fact2 (int N){
+    double F=1;
+    if(N%2==0){
+        for(int a=2;a<=N;a+=2)
+        F*=a;
+    }else for(int b=1;b<=N;b+=2)
+        F*=b;
+    return F;
+    }
+	public static void Main(string[] args){
+    Console.WriteLine("Введите целое положительное число N");
+    int N = Convert.ToInt32(Console.ReadLine());
+    if(N>0){
+        Console.WriteLine("Двойной факториал N равен "+(Fact2(N)));
+    }else
+    Console.WriteLine("Введенное число не соответствует условию.");
+	}
+}
