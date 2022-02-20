@@ -1,0 +1,20 @@
+using System;
+public class Program
+{
+    public static int Sign (double X){
+    int Y;
+    if (X<0){
+        Y=-1;
+    }else if(X>0){
+        Y=1;
+    }else
+    Y=0;
+    return Y;
+    }
+	public static void Main(string[] args){
+    Console.WriteLine("Введите два вещественных числа.");
+    double A = Convert.ToDouble(Console.ReadLine());
+    double B = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Результат "+(Sign(A)+Sign(B)));
+	}
+}
