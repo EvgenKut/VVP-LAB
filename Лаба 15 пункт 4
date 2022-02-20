@@ -1,0 +1,32 @@
+using System;
+public class Program
+{
+    public static int Quarter (double x, double y){
+    int k;
+    if(x>0){
+    if (y>0){
+        k=1;
+    }else k=4;
+    }else if(y>0){
+        k=2;
+    }else k=3;
+    return k;
+    }
+	public static void Main(string[] args){
+    Console.WriteLine("Введите ненулевые координаты первой точки (x1,y1)");
+    double x1 = Convert.ToDouble(Console.ReadLine());
+    double y1 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите ненулевые координаты второй точки (x2,y2)");
+    double x2 = Convert.ToDouble(Console.ReadLine());
+    double y2 = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите ненулевые координаты третьей точки (x3,y3)");
+    double x3 = Convert.ToDouble(Console.ReadLine());
+    double y3 = Convert.ToDouble(Console.ReadLine());
+    if(x1!=0 & x2!=0 & x3!=0 & y1!=0 & y2!=0 & y3!=0){
+        Console.WriteLine("Первая точка находится в "+(Quarter(x1,y1))+"-й координатной четверти.");
+        Console.WriteLine("Вторая точка находится в "+(Quarter(x2,y2))+"-й координатной четверти.");
+        Console.WriteLine("Третья точка находится в "+(Quarter(x3,y3))+"-й координатной четверти.");
+    }else
+    Console.WriteLine("Все координатны должны быть ненулевыми.");
+	}
+}
