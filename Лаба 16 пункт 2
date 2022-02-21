@@ -1,0 +1,23 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите количество членов N геометрической прогрессии (N>1)");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите первый член A геометрической прогрессии");
+    double A= Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите знаменатель D геометрической прогрессии");
+    double D = Convert.ToDouble(Console.ReadLine());
+    if (N>1){
+        double[] arr= new double[N];
+        double i=A;
+        for(int b=0;b<N;b++){
+            arr[b]=i;
+            i*=D;
+        }
+        for(int j=0;j<N;j++)
+        Console.Write(arr[j]+" ");
+    }else Console.WriteLine("Введенное N не соответствует условию.");
+	}
+}
