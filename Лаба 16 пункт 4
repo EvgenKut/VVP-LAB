@@ -7,7 +7,6 @@ public class Program
     int N = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите элементы массива");
     double[] A= new double[N];
-    double[] B= new double[N];
     for(int j=0;j<N;j++)
     A[j] = Convert.ToDouble(Console.ReadLine());
     if (N>0){
