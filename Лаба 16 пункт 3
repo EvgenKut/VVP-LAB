@@ -1,0 +1,24 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите размер N массива (N>2)");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите первый элемент A массива");
+    int A= Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите второй элемент B массива");
+    int B = Convert.ToInt32(Console.ReadLine());
+    if (N>2){
+        int[] arr= new int[N];
+        arr[0]=A;
+        arr[1]=B;
+        for(int b=2;b<N;b++){
+            for(int i=1;i<=b;i++)
+            arr[b]+=arr[b-i];
+        }
+        for(int j=0;j<N;j++)
+        Console.Write(arr[j]+" ");
+    }else Console.WriteLine("Введенное N не соответствует условию.");
+	}
+}
