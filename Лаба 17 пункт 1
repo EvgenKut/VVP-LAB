@@ -1,0 +1,23 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите размер N массива (N>0)");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите элементы массива");
+    double[] A= new double[N];
+    for(int j=0;j<N;j++)
+    A[j] = Convert.ToDouble(Console.ReadLine());
+    Console.WriteLine("Введите целые числа K и L (1<=K<=L<=N)");
+    int K = Convert.ToInt32(Console.ReadLine());
+    int L = Convert.ToInt32(Console.ReadLine());
+    double s=0;
+    int i;
+    if (K>=1 & L>=K & N>=L){
+        for(i=K;i<=L;i++)
+        s+=A[i];
+    Console.WriteLine("Среднее арифметическое элементов массива от K до L равно "+ (s/(L-K+1)));
+    }else Console.WriteLine("Введенные числа не соответствуют условию.");
+	}
+}
