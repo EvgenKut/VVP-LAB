@@ -1,0 +1,26 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите размер N массива (N>0)");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите элементы массива. Только два из них должны быть одинаковыми.");
+    double[] A= new double[N];
+    for(int k=0;k<N;k++)
+    A[k] = Convert.ToDouble(Console.ReadLine());
+    if(N>0){
+        int t = 0;
+        for(int i = 0; t != 1; i++){
+        for(int j = 0; j < N; j++){
+        if(i != j) {
+        if(A[i] == A[j]) {
+          Console.WriteLine("Одинаковые элементы массива стоят под номерами  "+(i)+" и "+(j));
+           t = 1;
+        }
+        }
+        }
+        }
+    }else Console.WriteLine("Введенное число N не соответствует условию.");
+	}
+}
