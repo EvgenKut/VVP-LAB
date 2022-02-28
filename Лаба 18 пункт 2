@@ -1,0 +1,25 @@
+using System;
+public class Program
+{
+	public static void Main(string[] args)
+	{
+    Console.WriteLine("Введите размер N массива (N>0)");
+    int N = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите элементы массива A");
+    double[] A= new double[N];
+    for(int i=0;i<N;i++)
+    A[i] = Convert.ToDouble(Console.ReadLine());
+    double[] B= new double[N];
+    if(N>0){
+        B[0]=A[0];
+        for(int K=1;K<N;K++){
+            for (int k=0;k<=K;k++){
+                B[K]+=A[k];
+            } B[K]=B[K]/(K+1);
+        } 
+        Console.Write("Массив B: ");
+        for(int l=0;l<N;l++)
+        Console.Write((B[l])+" ");
+    }else Console.WriteLine("Введенное число N не соответствует условию.");
+	}
+}
