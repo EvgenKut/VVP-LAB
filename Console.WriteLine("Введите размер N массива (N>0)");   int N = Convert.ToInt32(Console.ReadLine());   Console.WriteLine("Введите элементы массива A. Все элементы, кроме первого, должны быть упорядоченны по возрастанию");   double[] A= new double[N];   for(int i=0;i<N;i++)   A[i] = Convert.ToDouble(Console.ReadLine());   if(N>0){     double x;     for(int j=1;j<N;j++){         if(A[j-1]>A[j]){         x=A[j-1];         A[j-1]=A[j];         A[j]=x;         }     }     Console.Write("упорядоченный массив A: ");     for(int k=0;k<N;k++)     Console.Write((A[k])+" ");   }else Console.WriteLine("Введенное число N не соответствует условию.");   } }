@@ -1,0 +1,21 @@
+  Console.WriteLine("Введите размер N массива (N>0)");
+  int N = Convert.ToInt32(Console.ReadLine());
+  Console.WriteLine("Введите элементы массива A. Все элементы, кроме первого, должны быть упорядоченны по возрастанию");
+  double[] A= new double[N];
+  for(int i=0;i<N;i++)
+  A[i] = Convert.ToDouble(Console.ReadLine());
+  if(N>0){
+    double x;
+    for(int j=1;j<N;j++){
+        if(A[j-1]>A[j]){
+        x=A[j-1];
+        A[j-1]=A[j];
+        A[j]=x;
+        }
+    }
+    Console.Write("упорядоченный массив A: ");
+    for(int k=0;k<N;k++)
+    Console.Write((A[k])+" ");
+  }else Console.WriteLine("Введенное число N не соответствует условию.");
+  }
+}
